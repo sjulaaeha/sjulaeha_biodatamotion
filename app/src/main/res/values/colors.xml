@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Color Palette -->
+    <color name="primary_light">#CBB4A3</color>
+    <color name="primary_medium">#C7A58F</color>
+    <color name="primary_dark">#AF8971</color>
+    <color name="secondary_light">#876954</color>
+    <color name="secondary_dark">#6A4D39</color>
+    <color name="accent_dark">#5C3A25</color>
+    
+    <!-- Legacy colors for compatibility -->
+    <color name="purple_200">#CBB4A3</color>
+    <color name="purple_500">#C7A58F</color>
+    <color name="purple_700">#AF8971</color>
+    <color name="teal_200">#876954</color>
+    <color name="teal_700">#6A4D39</color>
+    <color name="black">#5C3A25</color>
+    <color name="white">#CBB4A3</color>
+</resources>

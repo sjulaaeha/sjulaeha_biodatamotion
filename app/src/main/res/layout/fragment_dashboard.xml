@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F1ED"
+    tools:context=".ui.dashboard.DashboardFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <!-- Foto Profil Placeholder -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            app:cardCornerRadius="60dp"
+            app:cardElevation="8dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp">
+            <ImageView
+                android:id="@+id/image_foto_profil"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_biodata_black_24dp"
+                android:scaleType="centerCrop"
+                android:background="#E7E0DA" />
+        </androidx.cardview.widget.CardView>
+
+        <!-- Nama -->
+        <TextView
+            android:id="@+id/text_nama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Siti Julaeha"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#6A4D39"
+            android:layout_marginBottom="4dp"
+            android:gravity="center" />
+        <TextView
+            android:id="@+id/text_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mahasiswa - Ilmu Komputer"
+            android:textSize="16sp"
+            android:textColor="#A89B91"
+            android:layout_marginBottom="16dp"
+            android:gravity="center" />
+
+        <!-- Card Biodata -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="18dp"
+            app:cardElevation="6dp"
+            android:layout_marginBottom="24dp"
+            app:cardBackgroundColor="#FFFFFF">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <!-- Baris 1 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="12dp">
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_home_black_24dp"
+                        android:tint="#6A4D39"
+                        android:layout_marginEnd="12dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Alamat: Jl. Raya Munjul No. 15, Solear, Tangerang, Banten"
+                        android:textSize="15sp"
+                        android:textColor="#4A3A28" />
+                </LinearLayout>
+
+                <!-- Baris 2 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="12dp">
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_cake_black_24dp"
+                        android:tint="#6A4D39"
+                        android:layout_marginEnd="12dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tempat, Tanggal Lahir: Tangerang, 5 Agustus 2004"
+                        android:textSize="15sp"
+                        android:textColor="#4A3A28" />
+                </LinearLayout>
+
+                <!-- Baris 3 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="12dp">
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_wc_black_24dp"
+                        android:tint="#6A4D39"
+                        android:layout_marginEnd="12dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Jenis Kelamin: Perempuan"
+                        android:textSize="15sp"
+                        android:textColor="#4A3A28" />
+                </LinearLayout>
+
+                <!-- Baris 4 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="12dp">
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_flag_black_24dp"
+                        android:tint="#6A4D39"
+                        android:layout_marginEnd="12dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kewarganegaraan: Indonesia"
+                        android:textSize="15sp"
+                        android:textColor="#4A3A28" />
+                </LinearLayout>
+
+                <!-- Baris 5 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="12dp">
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_phone_black_24dp"
+                        android:tint="#6A4D39"
+                        android:layout_marginEnd="12dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No. Telepon: 0882-9500-6681"
+                        android:textSize="15sp"
+                        android:textColor="#4A3A28" />
+                </LinearLayout>
+
+                <!-- Baris 6 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="12dp">
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_email_black_24dp"
+                        android:tint="#6A4D39"
+                        android:layout_marginEnd="12dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Email: julaehajahar2004@gmail.com"
+                        android:textSize="15sp"
+                        android:textColor="#4A3A28" />
+                </LinearLayout>
+
+                <!-- Baris 7 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="12dp">
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_school_black_24dp"
+                        android:tint="#6A4D39"
+                        android:layout_marginEnd="12dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Universitas: Universitas Yatsi Madani"
+                        android:textSize="15sp"
+                        android:textColor="#4A3A28" />
+                </LinearLayout>
+
+                <!-- Baris 8 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="12dp">
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_event_black_24dp"
+                        android:tint="#6A4D39"
+                        android:layout_marginEnd="12dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tahun Masuk: 2023"
+                        android:textSize="15sp"
+                        android:textColor="#4A3A28" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Semua elemen pendidikan dihapus sesuai permintaan -->
+
+    </LinearLayout>
+</ScrollView>

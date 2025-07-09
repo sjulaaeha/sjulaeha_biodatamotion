@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F1ED"
+    tools:context=".ui.home.HomeFragment">
+
+    <!-- Sapaan dan Subjudul di atas -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_sapaan_atas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="2dp"
+        app:cardBackgroundColor="@color/secondary_light">
+        <LinearLayout
+            android:id="@+id/layout_sapaan_atas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingStart="24dp"
+            android:paddingEnd="24dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/text_sapaan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="👋 Hai, Siti Julaeha!"
+                    android:textSize="20sp"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="normal"
+                    android:gravity="start"
+                    android:textAlignment="viewStart" />
+                <TextView
+                    android:id="@+id/text_subjudul"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Selamat datang di aplikasi Biodata Motion ✨"
+                    android:textSize="14sp"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginTop="2dp"
+                    android:gravity="start"
+                    android:textAlignment="viewStart" />
+            </LinearLayout>
+            <!-- ImageView untuk foto profil dihapus -->
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Header Card -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/header_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="4dp"
+        app:cardBackgroundColor="@color/primary_light"
+        android:layout_below="@id/card_sapaan_atas">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+            <LinearLayout
+                android:id="@+id/layout_info_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="12dp">
+                <TextView
+                    android:id="@+id/text_waktu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🕘 10:12:31"
+                    android:textSize="28sp"
+                    android:textColor="#6A4D39"
+                    android:textStyle="bold"
+                    android:fontFamily="monospace"
+                    android:gravity="center" />
+                <TextView
+                    android:id="@+id/text_tanggal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="📆 Rabu, 09 Juli 2025"
+                    android:textSize="18sp"
+                    android:textColor="#4A3A28"
+                    android:layout_marginTop="6dp"
+                    android:gravity="center" />
+                <TextView
+                    android:id="@+id/text_cuaca"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🌤 Tangerang — 30°C, Cerah"
+                    android:textSize="18sp"
+                    android:textColor="#4A3A28"
+                    android:layout_marginTop="6dp"
+                    android:gravity="center" />
+            </LinearLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Tambahkan kembali TextView motivasi di bawah header_card atau di posisi sebelumnya -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_motivasi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header_card"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="12dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="2dp"
+        app:cardBackgroundColor="#FFFBEA">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
+            <View
+                android:layout_width="6dp"
+                android:layout_height="match_parent"
+                android:background="#FFD600"
+                android:layout_marginEnd="12dp" />
+            <TextView
+                android:id="@+id/textMotivasi"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="🚀 Motivasi harian akan tampil di sini."
+                android:textSize="16sp"
+                android:textColor="#6A4D39"
+                android:fontFamily="sans-serif-medium"
+                android:lineSpacingExtra="4dp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Card Info -->
+    <!-- Saya hapus CardView info_card yang berisi info terbaru -->
+
+    <!-- Bagian kanan kosong/gelap tidak perlu diatur khusus, biarkan background saja -->
+
+    <LinearLayout
+        android:id="@+id/layout_reminder_kalender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/card_motivasi"
+        android:orientation="horizontal"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="12dp">
+
+        <!-- Reminder Card (berada di kiri) -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_reminder"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="2dp"
+            app:cardBackgroundColor="#FFFFFF">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+                <TextView
+                    android:id="@+id/text_reminder_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🔔 Reminder Tugas / Acara Hari Ini"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#6A4D39"
+                    android:layout_marginBottom="8dp" />
+                <TextView
+                    android:id="@+id/text_reminder_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="• Kirim laporan harian"
+                    android:textSize="15sp"
+                    android:textColor="#4A3A28"
+                    android:layout_marginBottom="4dp" />
+                <TextView
+                    android:id="@+id/text_reminder_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="• Review tugas kuliah"
+                    android:textSize="15sp"
+                    android:textColor="#4A3A28" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Mini Kalender Card (berada di kanan) -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_kalender"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="2dp"
+            app:cardBackgroundColor="#FFFFFF">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:gravity="center_horizontal">
+                <TextView
+                    android:id="@+id/text_kalender_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="📅 Kalender Minggu Ini"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#6A4D39"
+                    android:layout_marginBottom="8dp" />
+                <LinearLayout
+                    android:id="@+id/layout_mini_kalender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <!-- Tanggal-tanggal minggu ini akan diisi dari kode -->
+                    <TextView
+                        android:id="@+id/text_tgl1"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:gravity="center"
+                        android:text="7"
+                        android:textSize="15sp"
+                        android:textColor="#4A3A28"
+                        android:background="@drawable/bg_kalender_today" />
+                    <TextView
+                        android:id="@+id/text_tgl2"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:gravity="center"
+                        android:text="8"
+                        android:textSize="15sp"
+                        android:textColor="#4A3A28" />
+                    <TextView
+                        android:id="@+id/text_tgl3"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:gravity="center"
+                        android:text="9"
+                        android:textSize="15sp"
+                        android:textColor="#4A3A28" />
+                    <TextView
+                        android:id="@+id/text_tgl4"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:gravity="center"
+                        android:text="10"
+                        android:textSize="15sp"
+                        android:textColor="#4A3A28" />
+                    <TextView
+                        android:id="@+id/text_tgl5"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:gravity="center"
+                        android:text="11"
+                        android:textSize="15sp"
+                        android:textColor="#4A3A28" />
+                    <TextView
+                        android:id="@+id/text_tgl6"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:gravity="center"
+                        android:text="12"
+                        android:textSize="15sp"
+                        android:textColor="#4A3A28" />
+                    <TextView
+                        android:id="@+id/text_tgl7"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:gravity="center"
+                        android:text="13"
+                        android:textSize="15sp"
+                        android:textColor="#4A3A28" />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/text_progress_mingguan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="✔️ Progress minggu ini: 71%"
+                    android:textSize="13sp"
+                    android:textColor="#4A3A28"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+</RelativeLayout>
