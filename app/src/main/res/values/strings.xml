@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Biodata Motion</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Biodata</string>
+    <string name="title_notifications">Pendidikan</string>
+    <string name="title_activity">Activity</string>
+    <string name="welcome_message">Selamat Datang, Siti Julaeha!</string>
+    <string name="current_time">Jam: %s</string>
+    <string name="current_date">Tanggal: %s</string>
+    <string name="home_description">Selamat datang di aplikasi Biodata Motion. Aplikasi ini membantu Anda mengelola biodata dan informasi pendidikan dengan mudah.</string>
+</resources>
